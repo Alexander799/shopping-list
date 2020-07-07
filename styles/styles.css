@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 5em;
+    font: normal 300 16px Arial, sans-serif;
+}
+
+.block {
+    width: 40em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #8aa6de;
+}
+
+.block h1 {
+    color: #daffff;
+}
+
+.total {
+    font-weight: 700;
+    color: #405581;
+}
+
+.tbl {
+    font-weight: 700;
+    color: #daffff;
+}
+
+.tbl td {
+    padding: 0 0.7em;
+    line-height: 0.8em;
+    border-left: 2px solid #daffff;
+    border-right: 2px solid #daffff;
+    border-bottom: 1px solid #daffff;
+    border-radius: 4px;
+}
+
+.delete {
+    cursor: pointer;
+    color: red;
+    font-size: 30px;
+}
+
+.input-el {
+    margin: 0.3em 0.6em;
+    border: 2px solid #daffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.frm-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-frm {
+    max-width: 15em;
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+    border: 2px solid #646464;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #daffff;
+    box-shadow: 0.2em 0.2em 0.3em #7c7c7c;
+}
+
+.btn-frm:active {
+    cursor: grab;
+    border: 2px solid #daffff;
+    box-shadow: 0 0 0 #daffff;
+}
+
+.delete:active {
+    cursor: grab;
+}

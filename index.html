@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practic 4</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <div class="block">
+        <h1>Ваш список покупок</h1>
+        <div class="total">
+            Необходимые общие расходы: <span id="total"></span>
+            <!--Здесь выводиться общая сумма-->
+        </div>
+        <!--В блоке с id="table" генерируеться таблица со списком покупок-->
+        <div id="table" class="tbl"></div>
+        <!--Блок пользовательского ввода-->
+        <div id="form" class="frm">
+            <div class="frm-content">
+                <div id="input-form">
+                    <input type="text" id="product" class="input-el" placeholder="Название продукта" />
+                    <input type="text" id="nmbr" class="input-el" placeholder="Количество, вес" />
+                    <input type="text" id="price" class="input-el" placeholder="Цена за единицу" />
+                </div>
+                <button onclick="addItem()" class="btn-frm">
+            <span>Добавить товар в список</span>
+          </button>
+                <p id="err"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
